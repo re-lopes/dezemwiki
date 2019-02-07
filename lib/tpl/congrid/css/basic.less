@@ -1,0 +1,289 @@
+/**
+ * This file provides the most basic styles.
+ *
+ * If you integrate DokuWiki into another project, you might either
+ * want to integrate this file into the other project as well, or use
+ * the other project's basic CSS for DokuWiki instead of this one.
+ *
+ * @author Anika Henke <anika@selfthinker.org>
+ */
+
+html {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*____________ headers ____________*/
+
+caption,
+figcaption,
+summary,
+legend {
+    padding: 0;
+    margin: 0 0 .35em;
+    line-height: 1.2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    padding: 0;
+    line-height: 1.2;
+    clear: left; /* ideally 'both', but problems with toc */
+}
+[dir=rtl] h1,
+[dir=rtl] h2,
+[dir=rtl] h3,
+[dir=rtl] h4,
+[dir=rtl] h5,
+[dir=rtl] h6 {
+    clear: right;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0 0 0.444em;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 0.666em;
+}
+h3 {
+    font-size: 1.125em;
+    margin: 0 0 0.888em;
+}
+h4 {
+    font-size: 1em;
+    margin: 0 0 1.0em;
+}
+h5 {
+    font-size: .875em;
+    margin: 0 0 1.1428em;
+}
+h6 {
+    font-size: .75em;
+    margin: 0 0 1.333em;
+}
+/* bottom margin = 1 / font-size */
+
+
+/*____________ basic margins and paddings ____________*/
+
+p,
+ul,
+ol,
+dl,
+pre,
+table,
+hr,
+blockquote,
+figure,
+details,
+fieldset,
+address {
+    margin: 0 0 1.4em 0; /* bottom margin = line-height */
+    padding: 0;
+}
+
+div,
+video,
+audio {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*____________ lists ____________*/
+
+ul,
+ol {
+    padding: 0 0 0 1.5em;
+}
+[dir=rtl] ul,
+[dir=rtl] ol {
+    padding: 0 1.5em 0 0;
+}
+
+li,
+dd {
+    padding: 0;
+    margin: 0 0 0 1.5em;
+}
+[dir=rtl] li,
+[dir=rtl] dd {
+    margin: 0 1.5em 0 0;
+}
+dt {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+li ul,
+li ol,
+li dl,
+dl ul,
+dl ol,
+dl dl {
+    margin-bottom: 0;
+    padding: 0;
+}
+li li {
+    font-size: 100%;
+}
+
+/*____________ tables ____________*/
+
+table {
+    border-collapse: collapse;
+    empty-cells: show;
+    border-spacing: 0;
+    border: 1px solid @ini_border;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+}
+[dir=rtl] caption {
+    text-align: right;
+}
+
+th,
+td {
+    padding: .3em .5em;
+    margin: 0;
+    vertical-align: top;
+}
+th {
+    text-align: left;
+}
+[dir=rtl] th {
+    text-align: right;
+}
+
+/*____________ misc ____________*/
+
+img {
+    border-width: 0;
+    vertical-align: middle;
+    color: #666;
+    background-color: transparent;
+    font-style: italic;
+    height: auto;
+}
+video {
+    height: auto;
+}
+img,
+object,
+embed,
+iframe,
+video,
+audio {
+    max-width: 100%;
+}
+button img {
+    max-width: none;
+}
+
+hr {
+    border-top: solid @ini_border;
+    border-bottom: solid @ini_background;
+    border-width: 1px 0;
+    height: 0;
+    text-align: center;
+    clear: both;
+}
+
+acronym,
+abbr {
+    cursor: help;
+    border-bottom: 1px dotted;
+    font-style: normal;
+}
+em acronym,
+em abbr {
+    font-style: italic;
+}
+
+pre,
+code,
+samp,
+kbd {
+    direction: ltr;
+    text-align: left;
+}
+pre {
+    overflow: auto;
+    word-wrap: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+sub,
+sup {
+    font-size: .8em;
+    line-height: 1;
+}
+sub {
+    vertical-align: sub;
+}
+sup {
+    vertical-align: super;
+}
+
+small {
+    font-size: .8em;
+}
+
+/*____________ forms ____________*/
+
+/* for all of the form styles, style.ini colours are not used on purpose (except for fieldset border) */
+
+form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    padding: .7em 1em 0;
+    padding: .7rem 1rem; /* for those browsers understanding :last-child */
+    border: 1px solid @ini_text_alt;
+}
+fieldset > :last-child {
+    margin-bottom: 0;
+}
+legend {
+    margin: 0;
+    padding: 0 .1em;
+}
+label {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+select {
+    max-width: 100%;
+}
+optgroup {
+    font-style: italic;
+    font-weight: bold;
+}
+option {
+    font-style: normal;
+    font-weight: normal;
+}

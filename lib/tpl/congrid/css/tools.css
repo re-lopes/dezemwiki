@@ -1,0 +1,54 @@
+/**
+ * This file provides the definitions dealing with flex-boxes.
+ *
+ * @author LarsDW223
+ */
+
+div.toolslist {
+    text-align: left;
+}
+
+div.toolslist ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.toolslist.horizontal li {
+    float: left;
+}
+
+div.toolslist li a {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+
+    svg {
+        height: 1.4em;
+        width: 1.4em;
+        vertical-align: middle;
+        fill: @ini_border;
+        margin-right: 0.2em;
+    }
+}
+
+div.toolslist li a:hover,
+div.toolslist li a:active {
+    svg {
+        fill: @ini_link;
+    }
+}
+
+div.toolslist.flex-center {
+    display: inline-flex;
+    justify-content: center;
+}
+
+div.toolslist.flex-left {
+    display: inline-flex;
+    justify-content: left;
+}
+
+div.toolslist.flex-right {
+    display: inline-flex;
+    justify-content: right;
+}

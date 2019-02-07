@@ -1,0 +1,324 @@
+/**
+ * This file provides the settings for theme 'white'.
+ *
+ * @author LarsDW223
+ */
+
+body {
+    color: black;
+    font: normal 87.5%/1.4 Arial, sans-serif;
+    /* default font size: 100% => 16px; 93.75% => 15px; 87.5% => 14px; 81.25% => 13px; 75% => 12px */
+}
+
+/* Background color for grid cells */
+#dokuwiki__site.white > div {
+    background-color: white;
+}
+
+/* Tables */
+#dokuwiki__site.white th {
+    text-align: center;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+#dokuwiki__site.white td {
+    background-color: floralwhite;
+    border: 1px solid gainsboro;
+}
+
+/* Style for invalid cell type */
+#dokuwiki__site.white div.grid-invalid {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
+
+#dokuwiki__site.white div.grid-invalid div {
+    color: red;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* Diff view mark? */
+#dokuwiki__site.white mark {
+    background-color: #ffff99;
+    color: inherit;
+}
+
+#dokuwiki__site.white pre,
+#dokuwiki__site.white code,
+#dokuwiki__site.white samp,
+#dokuwiki__site.white kbd {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Nimbus Mono L", Monaco, "Courier New", monospace;
+    /* same font stack should be used for ".dokuwiki table.diff td" in _diff.css */
+    font-size: 1em;
+    color: black;
+}
+
+#dokuwiki__site.white pre,
+#dokuwiki__site.white samp,
+#dokuwiki__site.white kbd {
+    margin: 1em @ini_code_margin;
+    background-color: #fbfaf9;
+    border-radius: 2px;
+}
+
+#dokuwiki__site.white code {
+    background-color: lightgray;
+    padding: 0 0.25em;
+}
+
+#dokuwiki__site.white pre {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    padding: .7em 1em;
+}
+
+#dokuwiki__site.white blockquote {
+    font-style: italic;
+    padding: 0 .15em;
+    border: solid firebrick;
+    border-width: 0 0 0 .15em;
+    background-color: cornsilk;
+}
+
+[dir=rtl] #dokuwiki__site.white blockquote {
+    border-width: 0 .15em 0 0;
+}
+
+#dokuwiki__site.white input,
+#dokuwiki__site.white textarea,
+#dokuwiki__site.white button,
+#dokuwiki__site.white select,
+#dokuwiki__site.white optgroup,
+#dokuwiki__site.white option,
+#dokuwiki__site.white keygen,
+#dokuwiki__site.white output,
+#dokuwiki__site.white meter,
+#dokuwiki__site.white progress {
+    font: inherit;
+    font-weight: normal;
+    color: black;
+    background-color: cornsilk;
+    line-height: normal;
+    margin: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+#dokuwiki__site.white input,
+#dokuwiki__site.white textarea,
+#dokuwiki__site.white select,
+#dokuwiki__site.white keygen {
+    border: 1px solid #cccccc;
+    border-radius: 0.5em;
+    padding: 0em 0.25em;
+}
+
+#dokuwiki__site.white input:active,
+#dokuwiki__site.white input:focus,
+#dokuwiki__site.white textarea:active,
+#dokuwiki__site.white textarea:focus,
+#dokuwiki__site.white select:active,
+#dokuwiki__site.white select:focus,
+#dokuwiki__site.white keygen:active,
+#dokuwiki__site.white keygen:focus {
+    border-color: #f00000;
+}
+
+#dokuwiki__site.white input[type=radio],
+#dokuwiki__site.white input[type=checkbox],
+#dokuwiki__site.white input[type=image] {
+    padding: 0;
+    border-style: none;
+    box-shadow: none;
+}
+
+/* all types of buttons */
+#dokuwiki__site.white input[type=submit],
+#dokuwiki__site.white input[type=button],
+#dokuwiki__site.white input[type=reset],
+#dokuwiki__site.white input.button,
+#dokuwiki__site.white a.button,
+#dokuwiki__site.white button,
+#dokuwiki__site.white .qq-upload-button {
+    color: #333;
+    background-color: snow;
+    border: 1px solid #ccc;
+    padding: .1em .5em;
+    cursor: pointer;
+}
+
+#dokuwiki__site.white input[type=submit]:hover,
+#dokuwiki__site.white input[type=submit]:active,
+#dokuwiki__site.white input[type=submit]:focus,
+#dokuwiki__site.white input[type=button]:hover,
+#dokuwiki__site.white input[type=button]:active,
+#dokuwiki__site.white input[type=button]:hover,
+#dokuwiki__site.white input[type=reset]:hover,
+#dokuwiki__site.white input[type=reset]:active,
+#dokuwiki__site.white input[type=reset]:hover,
+#dokuwiki__site.white input.button:hover,
+#dokuwiki__site.white input.button:active,
+#dokuwiki__site.white input.button:focus,
+#dokuwiki__site.white a.button:hover,
+#dokuwiki__site.white a.button:active,
+#dokuwiki__site.white a.button:focus,
+#dokuwiki__site.white button:hover,
+#dokuwiki__site.white button:active,
+#dokuwiki__site.white button:focus,
+#dokuwiki__site.white .qq-upload-button:hover {
+    border-color: #999;
+    background-color: #ffffff;
+}
+
+#dokuwiki__site.white input[disabled],
+#dokuwiki__site.white button[disabled],
+#dokuwiki__site.white select[disabled],
+#dokuwiki__site.white textarea[disabled],
+#dokuwiki__site.white option[disabled],
+#dokuwiki__site.white input[readonly],
+#dokuwiki__site.white button[readonly],
+#dokuwiki__site.white select[readonly],
+#dokuwiki__site.white textarea[readonly] {
+    cursor: auto;
+    opacity: .5;
+    background-color: #eeeeee;
+}
+
+/* List styles */
+#dokuwiki__site.white ul             { list-style: circle outside; }
+#dokuwiki__site.white ol             { list-style: decimal outside; }
+#dokuwiki__site.white ol ol          { list-style-type: lower-alpha; }
+#dokuwiki__site.white ol ol ol       { list-style-type: upper-roman; }
+#dokuwiki__site.white ol ol ol ol    { list-style-type: upper-alpha; }
+#dokuwiki__site.white ol ol ol ol ol { list-style-type: lower-roman; }
+
+/* Page-ID on page */
+#dokuwiki__site.white .pageId.inside {
+    font-size: 1.25em;
+    background-color: snow;
+    padding: 0 1em;
+    margin: 0;
+    border-bottom: 1px solid lightgrey;
+    color: black;
+    font-weight: bold;
+}
+
+[dir=rtl] .dokuwiki .pageId.inside {
+    text-align: right;
+}
+
+/* Doc-Info on page */
+#dokuwiki__site.white .docInfo.inside {
+    background-color: snow;
+    font-size: 1em;
+    text-align: right;
+    border-top: 1px solid lightgrey;
+    padding: 0 1em 0 0;
+    margin: 0;
+}
+
+[dir=rtl] .dokuwiki .docInfo.inside {
+    text-align: left;
+}
+
+#dokuwiki__site.white span.bchead,
+#dokuwiki__site.white span.bcsep {
+    color: black;
+    font-weight: bold;
+}
+
+/* Links */
+#dokuwiki__site.white a {
+    outline: none;
+}
+
+#dokuwiki__site.white a:link,
+#dokuwiki__site.white a:visited {
+    text-decoration: none;
+    color: @ini_link;
+}
+
+#dokuwiki__site.white a:link:hover,
+#dokuwiki__site.white a:visited:hover,
+#dokuwiki__site.white a:link:focus,
+#dokuwiki__site.white a:visited:focus,
+#dokuwiki__site.white a:link:active,
+#dokuwiki__site.white a:visited:active {
+    text-decoration: underline;
+}
+
+/* Links to wiki pages */
+
+/* Existing wikipage */
+#dokuwiki__site.white a.wikilink1 {
+    color: LightSeaGreen;
+    background-color: inherit;
+}
+
+/* Not existing wikipage */
+#dokuwiki__site.white a.wikilink2 {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: black;
+    background-color: inherit;
+}
+
+#dokuwiki__site.white a.wikilink2:visited {
+    text-decoration: none;
+}
+
+#dokuwiki__site.white a.wikilink2:hover,
+#dokuwiki__site.white a.wikilink2:active,
+#dokuwiki__site.white a.wikilink2:focus {
+    border-bottom-width: 0;
+}
+
+/* any link to current page */
+#dokuwiki__site.white span.curid a {
+    font-weight: bold;
+}
+
+/* Other link types */
+
+#dokuwiki__site.white a.urlextern,
+#dokuwiki__site.white a.windows,
+#dokuwiki__site.white a.mail,
+#dokuwiki__site.white a.mediafile,
+#dokuwiki__site.white a.interwiki {
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 0 0 0 18px;
+}
+/* external link */
+#dokuwiki__site.white a.urlextern {
+    background-image: url(../../images/external-link.png);
+}
+/* windows share */
+#dokuwiki__site.white a.windows {
+    background-image: url(../../images/unc.png);
+}
+/* email link */
+#dokuwiki__site.white a.mail {
+    background-image: url(../../images/email.png);
+}
+
+/* icons of the following are set by dokuwiki in lib/exe/css.php */
+/* link to some embedded media */
+#dokuwiki__site.white a.mediafile {
+}
+/* interwiki link */
+#dokuwiki__site.white a.interwiki {
+}
+
+/* RTL corrections; if link icons don't work as expected, remove the following lines */
+[dir=rtl] #dokuwiki__site.white a.urlextern,
+[dir=rtl] #dokuwiki__site.white a.windows,
+[dir=rtl] #dokuwiki__site.white a.mail,
+[dir=rtl] #dokuwiki__site.white a.interwiki,
+[dir=rtl] #dokuwiki__site.white a.mediafile {
+    background-position: right center;
+    padding: 0 18px 0 0;
+}

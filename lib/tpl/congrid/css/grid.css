@@ -1,0 +1,240 @@
+/**
+ * This file provides the definitions dealing with flex-boxes.
+ *
+ * @author LarsDW223
+ */
+
+/* Taken from Icons - Material Design (material.io) */
+.scroll_up_area img {
+    width:100%;
+    height:100%;
+}
+
+/* Taken from Icons - Material Design (material.io) */
+.scroll_down_area img {
+    width:100%;
+    height:100%;
+}
+
+#dokuwiki__site {
+    max-width: @ini_site_width;
+}
+
+#dokuwiki__site > div {
+    text-align: left;
+    overflow: hidden;
+}
+
+.dokuwiki div.page {
+    padding: 1em;
+    margin: 0;
+}
+
+.border_semi_transparent {
+    border: 10px solid hsla(0, 0%, 100%, .5);
+    background-clip: padding-box;
+}
+
+.corners_round {
+    border-radius: 25px;
+}
+
+.no_text p,
+.no_text span {
+    display: none;
+}
+
+.no_icons img,
+.no_icons svg {
+    display: none;
+}
+
+.dokuwiki__pagetools {
+    padding: 0 0.25em;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.dokuwiki__pagetools a {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.dokuwiki__pagetools li {
+    white-space: nowrap;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.dokuwiki__pagetools li span {
+    margin: 0;
+}
+
+.dokuwiki__pagetools img,
+.dokuwiki__pagetools svg {
+    padding: 2px 0;
+    margin: 0;
+    min-width: 32px;
+    min-height: 32px;
+    display: inline-block;
+}
+
+.dokuwiki__pagetools li {
+    list-style: none;
+}
+
+.dokuwiki__content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dokuwiki .page {
+    flex-basis: 100%;
+
+    white-space: wrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.content {
+    padding: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+}
+
+div.grid-empty {
+    opacity: 0;
+}
+
+div.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.flex-column {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div.cont2 {
+    margin: auto;
+}
+
+div.same_height {
+    width: 100%;
+}
+
+div.same_height.childs1 > div {
+    height: 100%;
+}
+
+div.same_height.childs2 > div {
+    height: 50%;
+}
+
+div.same_height.childs3 > div {
+    height: 33%;
+}
+
+div.same_height.childs4 > div {
+    height: 25%;
+}
+
+div.same_height.childs5 > div {
+    height: 20%;
+}
+
+div.same_height.childs6 > div {
+    height: 16%;
+}
+
+div.same_height.childs7 > div {
+    height: 14%;
+}
+
+div.same_height.childs8 > div {
+    height: 12.5%;
+}
+
+div.same_height.childs9 > div {
+    height: 11.11%;
+}
+
+div.same_height.childs10 > div {
+    height: 10%;
+}
+
+/*
+div.same_width {
+    height: 100%;
+}
+
+div.same_width.childs1 > div {
+    width: 100%;
+}
+
+div.same_width.childs2 > div {
+    width: 50%;
+}
+
+div.same_width.childs3 > div {
+    width: 33%;
+}
+
+div.same_width.childs4 > div {
+    width: 25%;
+}
+
+div.same_width.childs5 > div {
+    width: 20%;
+}
+
+div.same_width.childs6 > div {
+    width: 16%;
+}
+
+div.same_width.childs7 > div {
+    width: 14%;
+}
+
+div.same_width.childs8 > div {
+    width: 12.5%;
+}
+
+div.same_width.childs9 > div {
+    width: 11.11%;
+}
+
+div.same_width.childs10 > div {
+    width: 10%;
+}
+*/
+
+div.grid-invalid {
+    display: flex;
+    background-color: @ini_background;
+    color: red;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+div.grid-invalid div {
+    color: red;
+    font-weight: bold;
+    background-color: white;
+}

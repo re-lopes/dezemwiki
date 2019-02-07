@@ -1,0 +1,7 @@
+base     congrid
+author   LarsDW223
+email    -
+date     2018-10-14
+name     Configurable Grid Template
+desc     A template using a configurable grid layout
+url      https://www.dokuwiki.org/template:congrid

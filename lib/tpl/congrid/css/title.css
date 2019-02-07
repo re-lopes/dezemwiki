@@ -1,0 +1,17 @@
+/**
+ * This file provides the definitions for the title.
+ *
+ * @author LarsDW223
+ */
+
+#dw__logo {
+    width:  @ini_logo_width;
+    height: @ini_logo_height;
+}
+
+#dw__title {
+    font-size:        @ini_title_font_size;
+    font-family:      @ini_title_font_family;
+    color:            @ini_title_color;
+    background-color: @ini_title_background_color;
+}

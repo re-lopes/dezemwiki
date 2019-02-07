@@ -1,0 +1,17 @@
+/**
+ * This file provides the design for the page id.
+ *
+ * @author LarsDW223
+ */
+
+.dokuwiki .pageId.inside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 1.5em;
+}
+
+.dokuwiki .docInfo.inside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 1.5em;
+}

@@ -1,0 +1,326 @@
+/**
+ * This file provides the settings if theme 'template-style-settings'
+ * is configured. All settings from the "Template Style Settings" are
+ * applied.
+ *
+ * @author LarsDW223
+ */
+
+body {
+    color: @ini_text;
+    font: normal 87.5%/1.4 Arial, sans-serif;
+    /* default font size: 100% => 16px; 93.75% => 15px; 87.5% => 14px; 81.25% => 13px; 75% => 12px */
+}
+
+/* Background color for grid cells */
+#dokuwiki__site.TSS > div {
+    background-color: @ini_background;
+}
+
+/* Tables */
+#dokuwiki__site.TSS th {
+    font-weight: bold;
+    background-color: @ini_background_alt;
+}
+
+#dokuwiki__site.TSS td {
+    border: 1px solid @ini_border;
+}
+
+/* Border definition for 'border = ' */
+#dokuwiki__site.TSS .border_TSS {
+    border: @ini_border_user;
+}
+
+/* Style for invalid cell type */
+#dokuwiki__site.TSS div.grid-invalid {
+    background-color: @ini_background;
+    color: @ini_error_color;
+    font-weight: bold;
+}
+
+#dokuwiki__site.TSS div.grid-invalid div {
+    color: @ini_error_color;
+    font-weight: bold;
+    background-color: @ini_background;
+}
+
+#dokuwiki__site.TSS mark {
+    background-color: @ini_highlight;
+    color: inherit;
+}
+
+#dokuwiki__site.TSS pre,
+#dokuwiki__site.TSS code,
+#dokuwiki__site.TSS samp,
+#dokuwiki__site.TSS kbd {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Nimbus Mono L", Monaco, "Courier New", monospace;
+    /* same font stack should be used for ".dokuwiki table.diff td" in _diff.css */
+    font-size: 1em;
+    background-color: @ini_background_site;
+    color: @ini_text;
+    box-shadow: inset 0 0 .3em @ini_border;
+    border-radius: 2px;
+}
+
+#dokuwiki__site.TSS pre {
+    border: 1px solid @ini_border;
+    border-radius: 2px;
+    box-shadow: inset 0 0 .5em @ini_border;
+    padding: .7em 1em;
+}
+
+#dokuwiki__site.TSS blockquote {
+    padding: 0 .5em;
+    border: solid @ini_border;
+    border-width: 0 0 0 .25em;
+}
+
+[dir=rtl] #dokuwiki__site.TSS blockquote {
+    border-width: 0 .25em 0 0;
+}
+
+#dokuwiki__site.TSS input,
+#dokuwiki__site.TSS textarea,
+#dokuwiki__site.TSS button,
+#dokuwiki__site.TSS select,
+#dokuwiki__site.TSS optgroup,
+#dokuwiki__site.TSS option,
+#dokuwiki__site.TSS keygen,
+#dokuwiki__site.TSS output,
+#dokuwiki__site.TSS meter,
+#dokuwiki__site.TSS progress {
+    font: inherit;
+    font-weight: normal;
+    color: #333;
+    background-color: #fff;
+    line-height: normal;
+    margin: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+#dokuwiki__site.TSS input,
+#dokuwiki__site.TSS textarea,
+#dokuwiki__site.TSS select,
+#dokuwiki__site.TSS keygen {
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 1px #eee;
+    border-radius: 2px;
+}
+
+#dokuwiki__site.TSS input:active,
+#dokuwiki__site.TSS input:focus,
+#dokuwiki__site.TSS textarea:active,
+#dokuwiki__site.TSS textarea:focus,
+#dokuwiki__site.TSS select:active,
+#dokuwiki__site.TSS select:focus,
+#dokuwiki__site.TSS keygen:active,
+#dokuwiki__site.TSS keygen:focus {
+    border-color: #999;
+}
+
+#dokuwiki__site.TSS input[type=radio],
+#dokuwiki__site.TSS input[type=checkbox],
+#dokuwiki__site.TSS input[type=image] {
+    padding: 0;
+    border-style: none;
+    box-shadow: none;
+}
+
+/* all types of buttons */
+#dokuwiki__site.TSS input[type=submit],
+#dokuwiki__site.TSS input[type=button],
+#dokuwiki__site.TSS input[type=reset],
+#dokuwiki__site.TSS input.button,
+#dokuwiki__site.TSS a.button,
+#dokuwiki__site.TSS button,
+#dokuwiki__site.TSS .qq-upload-button {
+    color: #333;
+    background-color: #eee;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc4MjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNEY0RjQiIG9mZnNldD0iMC4zIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0VFRUVFRSIgb2Zmc2V0PSIwLjk5Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI0NDQ0NDQyIgb2Zmc2V0PSIuOTkiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnODI0KSIgLz4KPC9zdmc+);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 30%, #eeeeee 99%, #cccccc 99%);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: .1em .5em;
+    cursor: pointer;
+}
+
+#dokuwiki__site.TSS input[type=submit]:hover,
+#dokuwiki__site.TSS input[type=submit]:active,
+#dokuwiki__site.TSS input[type=submit]:focus,
+#dokuwiki__site.TSS input[type=button]:hover,
+#dokuwiki__site.TSS input[type=button]:active,
+#dokuwiki__site.TSS input[type=button]:hover,
+#dokuwiki__site.TSS input[type=reset]:hover,
+#dokuwiki__site.TSS input[type=reset]:active,
+#dokuwiki__site.TSS input[type=reset]:hover,
+#dokuwiki__site.TSS input.button:hover,
+#dokuwiki__site.TSS input.button:active,
+#dokuwiki__site.TSS input.button:focus,
+#dokuwiki__site.TSS a.button:hover,
+#dokuwiki__site.TSS a.button:active,
+#dokuwiki__site.TSS a.button:focus,
+#dokuwiki__site.TSS button:hover,
+#dokuwiki__site.TSS button:active,
+#dokuwiki__site.TSS button:focus,
+#dokuwiki__site.TSS .qq-upload-button:hover {
+    border-color: #999;
+    background-color: #ddd;
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc2NzAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNEY0RjQiIG9mZnNldD0iMC4zIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0RERERERCIgb2Zmc2V0PSIwLjk5Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI0JCQkJCQiIgb2Zmc2V0PSIuOTkiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnNjcwKSIgLz4KPC9zdmc+);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 30%, #dddddd 99%, #bbbbbb 99%);
+}
+
+#dokuwiki__site.TSS input[disabled],
+#dokuwiki__site.TSS button[disabled],
+#dokuwiki__site.TSS select[disabled],
+#dokuwiki__site.TSS textarea[disabled],
+#dokuwiki__site.TSS option[disabled],
+#dokuwiki__site.TSS input[readonly],
+#dokuwiki__site.TSS button[readonly],
+#dokuwiki__site.TSS select[readonly],
+#dokuwiki__site.TSS textarea[readonly] {
+    cursor: auto;
+    opacity: .5;
+    background-color: #eee;
+}
+
+/* List styles */
+#dokuwiki__site.TSS ul             { list-style: square outside; }
+#dokuwiki__site.TSS ol             { list-style: decimal outside; }
+#dokuwiki__site.TSS ol ol          { list-style-type: lower-alpha; }
+#dokuwiki__site.TSS ol ol ol       { list-style-type: upper-roman; }
+#dokuwiki__site.TSS ol ol ol ol    { list-style-type: upper-alpha; }
+#dokuwiki__site.TSS ol ol ol ol ol { list-style-type: lower-roman; }
+
+/* Page-ID on page */
+#dokuwiki__site.TSS .pageId.inside {
+    font-size: 1.5em;
+    background-color: @ini_background;
+    padding: 0 1em;
+    margin: 0;
+    border-bottom: 1px solid black;
+    color: @ini_text_alt;
+}
+
+[dir=rtl] #dokuwiki__site.TSS .pageId.inside {
+    text-align: right;
+}
+
+/* Doc-Info on page */
+#dokuwiki__site.TSS .docInfo.inside {
+    background-color: @ini_background;
+    font-size: 1.5em;
+    text-align: right;
+    border-top: 1px solid black;
+    color: @ini_text_alt;
+    padding: 0 1em 0 0;
+    margin: 0;
+}
+
+[dir=rtl] #dokuwiki__site.TSS .docInfo.inside {
+    text-align: left;
+}
+
+#dokuwiki__site.TSS div.trace {
+    color:            @ini_trace_color;
+    background-color: @ini_trace_background_color;
+}
+
+#dokuwiki__site.TSS div.youarehere {
+    color:            @ini_youarehere_color;
+    background-color: @ini_youarehere_background_color;
+}
+
+/* Links */
+#dokuwiki__site.TSS a {
+    outline: none;
+}
+
+#dokuwiki__site.TSS a:link,
+#dokuwiki__site.TSS a:visited {
+    text-decoration: none;
+    color: @ini_link;
+}
+
+#dokuwiki__site.TSS a:link:hover,
+#dokuwiki__site.TSS a:visited:hover,
+#dokuwiki__site.TSS a:link:focus,
+#dokuwiki__site.TSS a:visited:focus,
+#dokuwiki__site.TSS a:link:active,
+#dokuwiki__site.TSS a:visited:active {
+    text-decoration: underline;
+}
+
+/* Links to wiki pages */
+
+/* Existing wikipage */
+#dokuwiki__site.TSS a.wikilink1 {
+    color: @ini_existing;
+    background-color: inherit;
+}
+
+/* Not existing wikipage */
+#dokuwiki__site.TSS a.wikilink2 {
+    text-decoration: none;
+    color: @ini_missing;
+    background-color: inherit;
+}
+
+#dokuwiki__site.TSS a.wikilink2:link,
+#dokuwiki__site.TSS a.wikilink2:visited {
+    border-bottom: 1px dashed;
+}
+
+#dokuwiki__site.TSS a.wikilink2:hover,
+#dokuwiki__site.TSS a.wikilink2:active,
+#dokuwiki__site.TSS a.wikilink2:focus {
+    border-bottom-width: 0;
+}
+
+/* any link to current page */
+#dokuwiki__site.TSS span.curid a {
+    font-weight: bold;
+}
+
+/* Other link types */
+
+#dokuwiki__site.TSS a.urlextern,
+#dokuwiki__site.TSS a.windows,
+#dokuwiki__site.TSS a.mail,
+#dokuwiki__site.TSS a.mediafile,
+#dokuwiki__site.TSS a.interwiki {
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 0 0 0 18px;
+}
+/* external link */
+#dokuwiki__site.TSS a.urlextern {
+    background-image: url(../../images/external-link.png);
+}
+/* windows share */
+#dokuwiki__site.TSS a.windows {
+    background-image: url(../../images/unc.png);
+}
+/* email link */
+#dokuwiki__site.TSS a.mail {
+    background-image: url(../../images/email.png);
+}
+
+/* icons of the following are set by dokuwiki in lib/exe/css.php */
+/* link to some embedded media */
+#dokuwiki__site.TSS a.mediafile {
+}
+/* interwiki link */
+#dokuwiki__site.TSS a.interwiki {
+}
+
+/* RTL corrections; if link icons don't work as expected, remove the following lines */
+[dir=rtl] #dokuwiki__site.TSS a.urlextern,
+[dir=rtl] #dokuwiki__site.TSS a.windows,
+[dir=rtl] #dokuwiki__site.TSS a.mail,
+[dir=rtl] #dokuwiki__site.TSS a.interwiki,
+[dir=rtl] #dokuwiki__site.TSS a.mediafile {
+    background-position: right center;
+    padding: 0 18px 0 0;
+}
